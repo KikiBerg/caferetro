@@ -18,7 +18,8 @@ nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 10px 0;      
+    padding: 10px 0;
+    margin: 0;   
 
 }
 
@@ -37,3 +38,73 @@ nav ul li a {
 }
 
 /*********************************************** Main */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    text-align: center;
+    padding: 20px;
+}
+
+section h2 {    
+    font-family: 'Spirax', sans-serif;
+    font-size: 10em;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    color:rgb(122, 13, 14);
+}
+
+.section-hot {
+    background-image: url('assets/hot.jpg');
+}
+
+.section-juicy {
+    background-image: url('assets/juicy.jpg');
+}
+
+.section-cozy {
+    background-image: url('assets/cosy.jpg');
+}
+
+
+.text-left, .text-right {
+    width: fit-content;
+}
+
+.text-left p, .text-right p {
+    margin: 50px;
+    padding: 20px;
+    font-family: "Poiret One", sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    background-color:rgba(122, 13, 14, 0.8);
+    color: white;
+   
+}
+
+.menu-list {
+    list-style: none;
+    padding: 20px;
+    background-color: rgba(20,20,20,0.7);
+    font-family: 'Poiret One', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    width: 80%;
+    text-align: left;
+    margin-top: 20px;
+    color: white;
+    width: fit-content;
+}
+
+.menu-list li {
+    margin: 5px 0;
+    line-height: 1.4;
+    
+}
