@@ -1,3 +1,15 @@
+/*********************************************** CSS Variables */
+:root {
+    --primary-color: rgba(40, 30, 34, 0.8);
+    --secondary-color: rgba(122, 13, 14, 0.8);   
+    --normal-red-color: rgb(122, 13, 14);
+    --text-color: white;
+    --font-primary: 'Spirax', sans-serif;
+    --font-secondary: 'Poiret One', sans-serif;
+}
+
+
+
 /*********************************************** Global Styles */
 body {
     margin: 0;
@@ -10,7 +22,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(40, 30, 34, 0.8);
+    background-color: var(--primary-color);
     z-index: 1000;
 }
 
@@ -30,8 +42,8 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-family: 'Spirax', sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-primary);
     font-size: 3rem;
     padding: 1rem 1rem;
     margin: 0 0.5rem;      
@@ -53,13 +65,13 @@ section {
 
 
 section h2 {    
-    font-family: 'Spirax', sans-serif;
+    font-family: var(--font-primary);
     font-size: 10em;
     padding: 10px;
     width: 100%;
     text-align: center;    
-    color:rgb(122, 13, 14);
-    margin-bottom: 100%;
+    color: var(--normal-red-color);
+    margin-bottom: 20rem;  
     
 }
 
@@ -97,11 +109,11 @@ section h2 {
 .text-left p, .text-right p {
     margin: 20px;
     padding: 20px;
-    font-family: "Poiret One", sans-serif;
+    font-family: var(--font-secondary);
     font-size: 2.5em;    
     font-weight: 500;
-    background-color:rgba(122, 13, 14, 0.8);
-    color: white;
+    background-color: var(--secondary-color);
+    color: var(--text-color);  
       
 }
 
@@ -109,14 +121,14 @@ section h2 {
 .menu-list {
     list-style: none;
     padding: 20px;
-    background-color: rgba(20,20,20,0.7);
-    font-family: 'Poiret One', sans-serif;
-    font-size: 1.5em;
+    background-color: rgba(20, 20, 20, 0.8);
+    font-family: var(--font-secondary);
+    font-size: 2em;
     font-weight: 500;
     width: 80%;
     text-align: left;
     margin-top: 20px;
-    color: white;
+    color: var(--text-color);
     width: fit-content;
     position: relative;
     z-index: 1;
@@ -130,7 +142,8 @@ section h2 {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    width: 500px;
+    width: 800px;
+    padding: 0 50px;
 }
 
 .menu-list .item-name {
@@ -142,7 +155,7 @@ section h2 {
 .menu-list .item-name::after {        
     position: absolute;
     padding-left: 5px;
-    color: white;
+    color: var(--text-color);
 }
 
 .menu-list .item-index {
